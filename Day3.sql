@@ -19,4 +19,4 @@ BEGIN
 END
 
 -- Source:
--- LeetCode 177 — Employees With Missing Information
+-- LeetCode 177 — Nth Highest Salary
