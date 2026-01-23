@@ -1,13 +1,13 @@
--- Day 1: Filtering Products by Business Rules
+-- Day 6: Finding Duplicate Emails (HAVING)
 
 -- Question:
--- Which products meet both health and sustainability criteria?
+-- Which email addresses appear more than once, indicating potential duplicates?
 
 -- Solution
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y' 
-    AND recyclable = 'Y';
+SELECT email AS Email
+FROM Person
+GROUP BY Email
+HAVING COUNT(email) > 1;
 
 -- Source:
--- LeetCode 1757 — Recyclable and Low Fat Products
+-- LeetCode 182 — Duplicate Emails
