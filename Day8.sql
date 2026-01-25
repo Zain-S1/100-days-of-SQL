@@ -1,13 +1,14 @@
--- Day 1: Filtering Products by Business Rules
+-- Day 8: Self-JOINs — Comparing Related Records
 
 -- Question:
--- Which products meet both health and sustainability criteria?
+-- Which employees earn more than their direct managers?
 
 -- Solution
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y' 
-    AND recyclable = 'Y';
+SELECT e.name AS Employee
+FROM Employee e
+INNER JOIN Employee m
+    ON m.id = e.managerId
+WHERE e.salary > m.salary;
 
 -- Source:
--- LeetCode 1757 — Recyclable and Low Fat Products
+-- LeetCode 181 — Employees Earning More Than Their Managers
