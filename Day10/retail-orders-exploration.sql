@@ -39,3 +39,18 @@ ORDER BY revenue DESC;
 --------------------------------------------------
 -- 3. Top 5 Products by Revenue
 --------------------------------------------------
+SELECT
+    product_id,
+    ROUND(
+        SUM(list_price * quantity * (1 - discount / 100.0)),
+        2
+    ) AS revenue
+FROM retail_orders
+GROUP BY product_id
+ORDER BY revenue DESC
+LIMIT 5;
+
+-- Insight:
+-- Highlights revenue-driving products.
+-- Often used for promotions and demand planning.
+
