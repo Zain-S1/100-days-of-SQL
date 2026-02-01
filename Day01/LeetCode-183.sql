@@ -1,13 +1,15 @@
--- Day 1: Filtering Products by Business Rules
+-- Day 1: Customers With No Orders
 
 -- Question:
--- Which products meet both health and sustainability criteria?
+-- Which customers have never placed an order?
 
 -- Solution
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y' 
-    AND recyclable = 'Y';
+SELECT 
+    c.name AS Customers
+FROM Customers c
+LEFT JOIN Orders o
+    ON c.id = o.customerId
+WHERE o.id IS NULL;
 
 -- Source:
--- LeetCode 1757 — Recyclable and Low Fat Products
+-- LeetCode 183 — Customers Who Never Order
