@@ -1,13 +1,14 @@
--- Day 1: Filtering Products by Business Rules
+-- Day 5: Handling NULL Values
 
 -- Question:
--- Which products meet both health and sustainability criteria?
+-- Which customers were not referred by a specific individual
+-- or have no referral information?
 
 -- Solution
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y' 
-    AND recyclable = 'Y';
+SELECT name
+FROM Customer
+WHERE referee_id != 2 
+    OR referee_id IS NULL;
 
 -- Source:
--- LeetCode 1757 — Recyclable and Low Fat Products
+-- LeetCode 584 — Find Customer Referee
