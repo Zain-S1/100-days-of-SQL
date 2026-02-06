@@ -1,13 +1,15 @@
--- Day 1: Filtering Products by Business Rules
+-- Day 6: JOINs and Relationship Reasoning
 
 -- Question:
--- Which products meet both health and sustainability criteria?
+-- Which employees manage a sufficiently large number of direct reports?
 
 -- Solution
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y' 
-    AND recyclable = 'Y';
+SELECT e1.name
+FROM Employee e1
+JOIN Employee e2
+    ON e1.id = e2.managerId
+GROUP BY e1.id, e1.name
+HAVING COUNT(e1.id) >= 5;
 
 -- Source:
--- LeetCode 1757 — Recyclable and Low Fat Products
+-- LeetCode 570 — Managers with at Least 5 Direct Reports
