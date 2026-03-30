@@ -46,5 +46,9 @@ FROM deliveries
 GROUP BY cost_bucket
 ORDER BY avg_rating DESC;
 
+-- Inisghts:
+-- * Delays are the single biggest driver of customer dissatisfaction
+
+--------------------------------------------------
 -- Source:
 -- Kaggle Dataset — Delivery Logistics Performance & Operations
