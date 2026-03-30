@@ -1,21 +1,16 @@
--- Day 47: Drivers of Customer Satisfaction
+-- Day 49: Delivery Efficiency (Expected vs Actual)
 
 -- Question:
--- What factors impact delivery ratings?
+-- How accurate are delivery time estimates?
 
 -- Solution
 --------------------------------------------------
--- 1️⃣ Rating by Delay Status
+-- 1️⃣ Overall Delivery Accuracy
 --------------------------------------------------
 SELECT
-    CASE
-        WHEN delivery_time_hours > expected_time_hours THEN 'Delayed'
-        ELSE 'On-Time'
-    END AS delivery_status_group,
-    AVG(delivery_rating) AS avg_rating,
-    COUNT(*) AS deliveries
-FROM deliveries
-GROUP BY delivery_status_group;
+    AVG(delivery_time_hours - expected_time_hours) AS avg_delay_hours,
+    AVG(ABS(delivery_time_hours - expected_time_hours)) AS avg_absolute_delay
+FROM deliveries;
 
 --------------------------------------------------
 -- 2️⃣ Rating by Delivery Time Bucket
