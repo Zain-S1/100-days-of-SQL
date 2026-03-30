@@ -24,18 +24,15 @@ GROUP BY delivery_mode
 ORDER BY avg_absolute_delay DESC;
 
 --------------------------------------------------
--- 3️⃣ Rating by Delivery Cost Bucket
+-- 3️⃣ Accuracy by Delivery Partner
 --------------------------------------------------
 SELECT
-    CASE
-        WHEN delivery_cost < 500 THEN 'Low Cost'
-        WHEN delivery_cost < 1000 THEN 'Medium Cost'
-        ELSE 'High Cost'
-    END AS cost_bucket,
-    AVG(delivery_rating) AS avg_rating
+    delivery_partner,
+    AVG(delivery_time_hours - expected_time_hours) AS avg_delay_hours,
+    AVG(ABS(delivery_time_hours - expected_time_hours)) AS avg_absolute_delay
 FROM deliveries
-GROUP BY cost_bucket
-ORDER BY avg_rating DESC;
+GROUP BY delivery_partner
+ORDER BY avg_absolute_delay DESC;
 
 -- Inisghts:
 -- * Delays are the single biggest driver of customer dissatisfaction
