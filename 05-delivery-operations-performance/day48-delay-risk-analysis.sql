@@ -29,6 +29,15 @@ ORDER BY delay_rate DESC
 LIMIT 10;
 
 -- Insights:
+-- 🔴 Highest Risk
+--    Express + (Stormy / Rainy) + Any Vehicle + High-density regions
+--    → Delay rates: ~85%–96%
+-- 🟠 Moderate Risk
+--    Same-day + Bad Weather
+--    → Delay rates: ~38%
+-- 🟢 Lowest Risk
+--    Standard / Two-day + Any Weather
+--    → Delay rates: ~0%
 
 --------------------------------------------------
 -- Source:
