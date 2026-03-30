@@ -28,5 +28,7 @@ HAVING COUNT(*) >= 50   -- filter small/noisy groups
 ORDER BY delay_rate DESC
 LIMIT 10;
 
+-- Insights:
+
 -- Source:
 -- Kaggle Dataset — Delivery Logistics Performance & Operations
