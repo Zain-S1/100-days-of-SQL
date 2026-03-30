@@ -42,6 +42,15 @@ FROM deliveries
 GROUP BY weight_bucket
 ORDER BY delay_rate DESC;
 
+-- Insights:
+-- * High-priority categories perform worse (Pharmacy & groceries)
+--   → Likely due to urgency pressures or higher service expectations.
+-- * Speed and cost don’t fully explain delays (by type)
+--   - Clothing → slowest (6.40) but not worst delays.
+--   - Fragile items → fastest (6.15) and low delays.
+-- * Although heavier shipments are usually expected to be harder, lighter packages perform worse.
+--   Maybe because heavier shipments are planned more carefully, while lighter shipments have
+--   high-volume → more stops → more exposed to delays.
 
 --------------------------------------------------
 -- Source:
