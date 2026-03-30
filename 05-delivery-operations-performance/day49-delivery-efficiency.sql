@@ -13,19 +13,15 @@ SELECT
 FROM deliveries;
 
 --------------------------------------------------
--- 2️⃣ Rating by Delivery Time Bucket
+-- 2️⃣ Accuracy by Delivery Mode
 --------------------------------------------------
 SELECT
-    CASE
-        WHEN delivery_time_hours < 3 THEN '< 3 hrs'
-        WHEN delivery_time_hours < 6 THEN '3-6 hrs'
-        WHEN delivery_time_hours < 10 THEN '6-10 hrs'
-        ELSE '10+ hrs'
-    END AS time_bucket,
-    AVG(delivery_rating) AS avg_rating
+    delivery_mode,
+    AVG(delivery_time_hours - expected_time_hours) AS avg_delay_hours,
+    AVG(ABS(delivery_time_hours - expected_time_hours)) AS avg_absolute_delay
 FROM deliveries
-GROUP BY time_bucket
-ORDER BY avg_rating DESC;
+GROUP BY delivery_mode
+ORDER BY avg_absolute_delay DESC;
 
 --------------------------------------------------
 -- 3️⃣ Rating by Delivery Cost Bucket
