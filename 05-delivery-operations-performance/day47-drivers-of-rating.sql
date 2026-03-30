@@ -48,6 +48,7 @@ ORDER BY avg_rating DESC;
 
 -- Inisghts:
 -- * Delays are the single biggest driver of customer dissatisfaction
+-- * Ratings decrease as cost increases
 
 --------------------------------------------------
 -- Source:
