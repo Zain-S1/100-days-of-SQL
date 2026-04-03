@@ -5,11 +5,11 @@
 
 | Metric | Description |
 |--------|------------|
-| **Total Clients** | Total number of delivery records |
-| **Subscription Rate** | Percentage of deliveries completed without delay |
-| **Average Balance** | Average time taken to complete deliveries |
-| **Defult Rate** | Mean delivery cost per shipment |
-| **Loan Distribution** | Frequency of delays across delivery service levels |
+| **Total Clients** | Total number of customers in the dataset |
+| **Subscription Rate** | Percentage of clients who subscribed to the term deposit |
+| **Average Balance** | Average yearly account balance per customer |
+| **Defult Rate** | Average yearly account balance per customer |
+| **Loan Distribution** | Proportion of customers with housing and personal loans |
 
 
 ## 🔎 Observations
