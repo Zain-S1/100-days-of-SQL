@@ -3,7 +3,7 @@
 
 -- Columns:
 
--- delivery_id, delivery_partner, package_type,
+-- age, job, marital,
 -- vehicle_type, delivery_mode, region,
 -- weather_condition, distance_km,
 -- package_weight_kg, delivery_time_hours,
