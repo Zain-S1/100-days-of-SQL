@@ -16,12 +16,12 @@ SELECT
 FROM credit_scoring;
 
 --------------------------------------------------
--- 2. credit_scoring
+-- 2. Subscription Rate
 --------------------------------------------------
 
 
 --------------------------------------------------
--- 3. Average Delivery Time
+-- 3. Average Balance
 --------------------------------------------------
 SELECT
     AVG(delivery_time_hours) AS avg_delivery_time
