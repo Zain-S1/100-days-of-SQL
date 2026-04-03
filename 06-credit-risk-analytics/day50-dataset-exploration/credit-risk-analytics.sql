@@ -4,11 +4,8 @@
 -- Columns:
 
 -- age, job, marital, education,
--- defult, balance,
--- weather_condition, distance_km,
--- package_weight_kg, delivery_time_hours,
--- expected_time_hours, delayed,
--- delivery_status, delivery_rating, delivery_cost
+-- defult, balance, housing, loan,
+-- contact, 
 
 --------------------------------------------------
 -- 1. Total Deliveries
