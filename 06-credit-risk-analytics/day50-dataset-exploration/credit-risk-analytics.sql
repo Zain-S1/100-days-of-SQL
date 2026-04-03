@@ -35,17 +35,5 @@ FROM credit_scoring;
 --------------------------------------------------
 
 
---------------------------------------------------
--- 6. Delay Rate by Delivery Mode
---------------------------------------------------
-SELECT
-    delivery_mode,
-    SUM(CASE
-        WHEN delivery_time_hours > expected_time_hours
-        THEN 1 ELSE 0
-    END) * 1.0 / COUNT(*) AS delay_rate
-FROM deliveries
-GROUP BY delivery_mode
-ORDER BY delay_rate DESC;
 
 --------------------------------------------------
