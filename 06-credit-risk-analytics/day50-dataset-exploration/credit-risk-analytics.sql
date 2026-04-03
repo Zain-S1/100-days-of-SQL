@@ -3,11 +3,10 @@
 
 -- Columns:
 
--- age, job, marital, education,
--- defult, balance, housing, loan,
--- contact, day, month, diration,
--- campaign, pdays, previous, 
--- pouycome, y
+-- age, job, marital, education, defult
+-- balance, housing, loan, contact, day,
+-- month, diration, campaign, pdays, 
+-- previous, pouycome, y
 
 --------------------------------------------------
 -- 1. Total Deliveries
