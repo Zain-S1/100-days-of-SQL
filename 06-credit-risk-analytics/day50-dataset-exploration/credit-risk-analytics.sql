@@ -16,14 +16,9 @@ SELECT
 FROM credit_scoring;
 
 --------------------------------------------------
--- 2. On-Time Delivery Rate
+-- 2. credit_scoring
 --------------------------------------------------
-SELECT
-    SUM(CASE
-        WHEN delivery_time_hours <= expected_time_hours
-        THEN 1 ELSE 0
-    END) * 1.0 / COUNT(*) AS on_time_delivery_rate
-FROM deliveries;
+
 
 --------------------------------------------------
 -- 3. Average Delivery Time
