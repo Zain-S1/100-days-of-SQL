@@ -5,7 +5,7 @@
 
 -- age, job, marital, education,
 -- defult, balance, housing, loan,
--- contact, 
+-- contact, day, month, diration,
 
 --------------------------------------------------
 -- 1. Total Deliveries
