@@ -3,8 +3,8 @@
 
 -- Columns:
 
--- age, job, marital,
--- vehicle_type, delivery_mode, region,
+-- age, job, marital, education,
+-- defult, balance,
 -- weather_condition, distance_km,
 -- package_weight_kg, delivery_time_hours,
 -- expected_time_hours, delayed,
