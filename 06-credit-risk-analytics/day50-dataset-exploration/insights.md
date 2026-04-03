@@ -27,8 +27,8 @@
 
 ## 🚀 Next Steps
 
-- Analyze factors driving delivery delays
-- Evaluate partner performance across regions
-- Study weather impact on delivery time
-- Compare cost efficiency across vehicle types
-- Identify operational bottlenecks
+- Analyze subscription rates across demographic segments (age, job, education)
+- Evaluate financial factors influencing customer decisions (balance, loans, default)
+- Study campaign effectiveness using contact history variables
+- Identify high-value and high-risk customer segments
+- Develop a customer targeting strategy for improving conversion rates
