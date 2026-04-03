@@ -28,7 +28,7 @@ SELECT
 FROM deliveries;
 
 --------------------------------------------------
--- 4. Average Delivery Cost
+-- 4. Defult Rate
 --------------------------------------------------
 SELECT
     AVG(delivery_cost) AS avg_delivery_cost
