@@ -1,5 +1,5 @@
--- Day 40: Kaggle Dataset Exploration — Delivery Operations Performance Summary
--- Dataset: Delivery Logistics Performance & Operations
+-- Day 40: Kaggle Dataset Exploration — Credit Risk Analytics
+-- Dataset: Credit Scoring for Borrowers in Bank
 
 -- Columns:
 
