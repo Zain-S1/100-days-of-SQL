@@ -9,11 +9,11 @@
 -- previous, pouycome, y
 
 --------------------------------------------------
--- 1. Total Deliveries
+-- 1. Total Clients
 --------------------------------------------------
 SELECT
-    COUNT(*) AS total_deliveries
-FROM deliveries;
+    COUNT(*) AS total_clients
+FROM credit_scoring;
 
 --------------------------------------------------
 -- 2. On-Time Delivery Rate
