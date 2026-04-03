@@ -23,23 +23,17 @@ FROM credit_scoring;
 --------------------------------------------------
 -- 3. Average Balance
 --------------------------------------------------
-SELECT
-    AVG(delivery_time_hours) AS avg_delivery_time
-FROM deliveries;
+
 
 --------------------------------------------------
 -- 4. Defult Rate
 --------------------------------------------------
-SELECT
-    AVG(delivery_cost) AS avg_delivery_cost
-FROM deliveries;
+
 
 --------------------------------------------------
--- 5. Average Customer Rating
+-- 5. Loan Distribution
 --------------------------------------------------
-SELECT
-    AVG(delivery_rating) AS avg_delivery_rating
-FROM deliveries;
+
 
 --------------------------------------------------
 -- 6. Delay Rate by Delivery Mode
