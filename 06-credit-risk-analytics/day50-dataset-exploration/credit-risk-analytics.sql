@@ -19,7 +19,10 @@ FROM credit_scoring;
 --------------------------------------------------
 -- 2. Subscription Rate
 --------------------------------------------------
-
+SELECT
+    SUM(CASE WHEN subscribed = 'yes' THEN 1 ELSE 0 END) * 1.0
+    / COUNT(*) AS subscription_rate
+FROM credit_scoring;
 
 --------------------------------------------------
 -- 3. Average Balance
