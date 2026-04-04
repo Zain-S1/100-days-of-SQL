@@ -42,8 +42,11 @@ GROUP BY education_level
 ORDER BY conversion_rate DESC;
 
 -- Inisghts:
--- * 
--- * 
+-- * Under 30 has the highest conversion (17.60%), while despite being the largest segment, 
+--   the 30–50 group has the lowest conversion (10.01%).
+-- * Students (28.68%) and retired customers (22.79%) convert the most.
+-- * Tertiary education has the highest conversion, and primary education has the lowest.
+-- * The largest groups (30–50 and blue-collar) have lower conversion, showing room for improvement in targeting.
 
 --------------------------------------------------
 -- Source:
