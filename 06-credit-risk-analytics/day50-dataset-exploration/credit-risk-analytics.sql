@@ -47,6 +47,6 @@ SELECT
     has_personal_loan,
     COUNT(*) AS customers
 FROM credit_scoring
-GROUP has_housing_loan, has_personal_loan;
+GROUP BY has_housing_loan, has_personal_loan;
 
 --------------------------------------------------
