@@ -27,7 +27,9 @@ FROM credit_scoring;
 --------------------------------------------------
 -- 3. Average Balance
 --------------------------------------------------
-
+SELECT
+    AVG(balance) AS avg_balance
+FROM credit_scoring;
 
 --------------------------------------------------
 -- 4. Defult Rate
