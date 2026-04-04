@@ -13,7 +13,13 @@
 
 
 ## 🔎 Observations
-
+- The dataset contains data of **45,211 customers**.
+- The **average account balance is around 1,362**, showing moderate financial capacity across customers.
+- The **default rate is very low (~1.8%)**, indicating that most customers are financially stable.
+- Loan distribution reveals important patterns in customer obligations:
+  * The largest group consists of customers with **housing loans only (20,763)**, followed by those with **no loans (17,204)**.
+  * The smallest group **has only personal loans (2,877)**.
+  * This indicates that a significant portion of customers are already financially committed, which may influence their willingness to subscribe.
 
 
 ## 🚀 Next Steps
