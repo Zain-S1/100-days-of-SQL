@@ -1,4 +1,4 @@
-# 📊 Day 50 – Credity Risk Analytics
+# 📊 Day 50 – Bank Marketing Analytics
 
 
 ## 📌 Key Metrics
