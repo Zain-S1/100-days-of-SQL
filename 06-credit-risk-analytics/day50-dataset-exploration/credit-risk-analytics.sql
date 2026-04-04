@@ -32,7 +32,7 @@ SELECT
 FROM credit_scoring;
 
 --------------------------------------------------
--- 4. Defult Rate
+-- 4. Credit Defult Rate
 --------------------------------------------------
 SELECT
     SUM(CASE WHEN has_credit_defult = 'yes' THEN 1 ELSE 0 END) * 1.0
@@ -42,7 +42,11 @@ FROM credit_scoring;
 --------------------------------------------------
 -- 5. Loan Distribution
 --------------------------------------------------
-
-
+SELECT
+    has_housing_loan,
+    has_personal_loan,
+    COUNT(*) AS customers
+FROM credit_scoring
+GROUP has_housing_loan, has_personal_loan;
 
 --------------------------------------------------
