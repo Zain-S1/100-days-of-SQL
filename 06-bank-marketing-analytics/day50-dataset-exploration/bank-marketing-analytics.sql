@@ -1,4 +1,4 @@
--- Day 40: Kaggle Dataset Exploration — Credit Risk Analytics
+-- Day 40: Kaggle Dataset Exploration — Bank Marketing Analytics
 -- Dataset: Credit Scoring for Borrowers in Bank
 
 -- Columns:
