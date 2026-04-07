@@ -45,11 +45,6 @@ FROM credit_scoring
 GROUP BY has_housing_loan, has_personal_loan
 ORDER BY conversion_rate DESC;
 
--- Insights:
--- * Stormy weather has the worst performance; with nearly 1 in 3+ deliveries delayed.
--- * Rain significantly impacts operations, only slightly better than stormy conditions.
--- * Fog causes moderate disruption, likely due to low visibility.
-
 --------------------------------------------------
 -- Source:
 -- Kaggle Dataset — Credit Scoring for Borrowers in Bank
