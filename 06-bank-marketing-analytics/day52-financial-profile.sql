@@ -4,20 +4,20 @@
 -- How does weather condition affect delivery delays?
 
 -- Solution
-SELECT
-    weather_condition,
-    COUNT(*) AS total_deliveries,
-    SUM(CASE
-        WHEN delivery_time_hours > expected_time_hours
-        THEN 1 ELSE 0
-    END) AS delayed_deliveries,
-    SUM(CASE
-        WHEN delivery_time_hours > expected_time_hours
-        THEN 1 ELSE 0
-    END) * 1.0 / COUNT(*) AS delay_rate
-FROM deliveries
-GROUP BY weather_condition
-ORDER BY delay_rate DESC;
+--------------------------------------------------
+-- 1️⃣ Conversion by Account Balance Bucket
+--------------------------------------------------
+
+
+--------------------------------------------------
+-- 2️⃣ Conversion by Credit Defult
+--------------------------------------------------
+
+
+--------------------------------------------------
+-- 3️⃣ Conversion by Loan Status
+--------------------------------------------------
+
 
 -- Insights:
 -- * Stormy weather has the worst performance; with nearly 1 in 3+ deliveries delayed.
