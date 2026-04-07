@@ -26,4 +26,4 @@ ORDER BY delay_rate DESC;
 
 --------------------------------------------------
 -- Source:
--- Kaggle Dataset — Delivery Logistics Performance & Operations
+-- Kaggle Dataset — Credit Scoring for Borrowers in Bank
