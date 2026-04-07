@@ -1,5 +1,8 @@
 -- Day 51: Conversion by Demographics
 
+-- Question:
+-- Which demographic groups are most likely to subscribe?
+
 -- Solution
 --------------------------------------------------
 -- 1️⃣ Conversion by Age Group
