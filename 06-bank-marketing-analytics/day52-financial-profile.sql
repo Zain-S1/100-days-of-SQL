@@ -35,7 +35,15 @@ GROUP BY balance_group;
 --------------------------------------------------
 -- 3️⃣ Conversion by Loan Status
 --------------------------------------------------
-
+SELECT 
+   has_housing_loan,
+   has_personal_loan, 
+   COUNT(*) AS total_clients,
+   SUM(CASE WHEN subscribed = 'yes' THEN 1 ELSE 0 END) * 1.0
+   / COUNT(*) AS conversion_rate
+FROM credit_scoring
+GROUP BY has_housing_loan, has_personal_loan
+ORDER BY conversion_rate DESC;
 
 -- Insights:
 -- * Stormy weather has the worst performance; with nearly 1 in 3+ deliveries delayed.
